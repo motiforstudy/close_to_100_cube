@@ -1,6 +1,6 @@
 import random
 
-from game_show import show_messages
+# from game_show import show_messages
 
 
 def roll_two_dices() -> tuple [int, int]:
@@ -33,19 +33,19 @@ def tie_breaker(player_1, player_2):
     if player_1 == player_2:
         breaker_turn = roll_two_dices()
 
-def user_decision():
-    show_messages()
-    user_choice = input ("please choose: do you want to roll or pass. \n"
-                         "to roll press r,   to pass press p")
-    if user_choice == "p":
-        pass
-    elif user_choice == "r":
-        roll_two_dices()
-        show_messages()
-    else:
-        user_decision()
-
-    return user_choice
+# def user_decision():
+#     show_messages()
+#     user_choice = input ("please choose: do you want to roll or pass. \n"
+#                          "to roll press r,   to pass press p")
+#     if user_choice == "p":
+#         pass
+#     elif user_choice == "r":
+#         roll_two_dices()
+#         show_messages()
+#     else:
+#         user_decision()
+#
+#     return user_choice
 
 
 
